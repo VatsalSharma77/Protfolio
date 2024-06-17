@@ -1,0 +1,157 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+
+.mywork-title {
+  position: relative;
+}
+
+.mywork-title h1 {
+  padding: 0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.mywork-title img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 80px;
+}
+
+.mywork-container img {
+  box-sizing: border-box;
+  width: 100%;
+  height: 300px;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.mywork-container .work:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+  border: 4px solid #ff00ff;
+  border-radius: 10px;
+}
+
+.mywork-para {
+  width: 100%;
+  height: 0%;
+  border-radius: 5px;
+  background: linear-gradient(270deg, #df8908 10%, #b415ff 100%);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.mywork-para p {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+.mywork-para h2 {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.work:hover .mywork-para {
+  height: 100%;
+}
+
+.live-links {
+  margin-top: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.live-links img {
+  border-radius: 50%;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s;
+  padding: 5px;
+}
+
+.live-links img:hover {
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+
+@media (max-width: 768px) {
+  .mywork {
+    gap: 80px;
+    margin: 50px 70px;
+    align-items: start;
+  }
+  .mywork-title h1 {
+    font-size: 50px;
+    padding: 0px;
+  }
+  .mywork-title img {
+    width: 130px;
+    right: -20px;
+  }
+
+  .mywork-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 70px;
+  }
+
+  .mywork-para p {
+    font-size: 12px;
+  }
+
+  .mywork-para h2 {
+    font-size: 16px;
+  }
+
+  .live-links img {
+    width: 40px;
+    height: 40px;
+  }
+  .mywork-container {
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .mywork-container img {
+    height: 200px;
+  }
+
+  .mywork-container .work:hover {
+    border: 2px solid #ff00ff;
+    border-radius: 10px;
+  }
+
+  .live-links img {
+    width: 40px;
+    height: 40px;
+  }
+}
