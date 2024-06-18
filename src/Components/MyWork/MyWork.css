@@ -101,8 +101,60 @@
   transform: scale(1.2);
   transition: 0.3s;
 }
+@media only screen and (max-width: 600px) {
+  .mywork {
+     gap: 60px;
+    margin: 30px 50px;
+    align-items: start;
+  }
+  .mywork-title h1 {
+    font-size: 35px;
+    padding: 0px;
+  }
+  .mywork-title img {
+    width: 80px;
+    right: -20px;
+  }
 
-@media (max-width: 768px) {
+  .mywork-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 60px;
+  }
+
+  .mywork-para p {
+    font-size: 8px;
+  }
+
+  .mywork-para h2 {
+    font-size: 12px;
+  }
+
+  .live-links img {
+    width: 30px;
+    height: 30px;
+  }
+  .mywork-container {
+    gap: 20px;
+    margin: 20px;
+  }
+
+  .mywork-container img {
+    height: 150px;
+  }
+
+  .mywork-container .work:hover {
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+  }
+
+  .live-links img {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   .mywork {
     gap: 80px;
     margin: 50px 70px;

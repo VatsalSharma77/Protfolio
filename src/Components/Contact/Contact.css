@@ -132,7 +132,56 @@
   transition: 0.3s;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 600px) {
+  .contact {
+    gap: 60px;
+    margin: 30px 50px;
+    align-items: start;
+  }
+  .contact-title h1 {
+    font-size: 35px;
+    padding: 0px;
+  }
+  .contact-title img {
+    width: 80px;
+    right: -20px;
+  }
+  .contact-section {
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-left h1 {
+    font-size: 40px;
+  }
+  .contact-left p {
+    font-size: 14px;
+  }
+  .contact-details {
+    gap: 10px;
+  }
+  .contact-details img {
+    width: 20px;
+  }
+  .contact-right label {
+    font-size: 16px;
+  }
+  .contact-right input {
+    width: 90%;
+    font-size: 16px;
+    height: 40px;
+  }
+  .contact-right textarea {
+    width: 90%;
+    font-size: 16px;
+  }
+  .contact-submit {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
   .contact {
     /* border: 1px solid red; */
     gap: 50px;
