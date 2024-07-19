@@ -14,6 +14,7 @@ const MyWork = () => {
         {mywork_data.map((work, index) => {
           return (
             <div className="work" key={index}>
+              <h1 className="w_name_head">{work.w_name}</h1>
               <img src={work.w_img} alt="" />
               <div className="mywork-para">
                 <h2>{work.w_name}</h2>

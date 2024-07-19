@@ -9,6 +9,8 @@
 
 .skill-title {
   position: relative;
+  margin-top: 80px;
+
 }
 
 .skill-title h1 {
@@ -96,10 +98,10 @@
     gap: 20px;
   }
   .skill-techstack-info img {
-    width: 50px;
+    width: 45px;
     }
     .skill-techstack-info span {
-      font-size: 18px;
+      font-size: 16px;
     }
     .tool-techstack-list-row {
       display: grid;
@@ -131,10 +133,10 @@
     gap: 28px;
   }
   .skill-techstack-info img {
-    width: 75px;
+    width: 60px;
     }
     .skill-techstack-info span {
-      font-size: 24px;
+      font-size: 18px;
     }
     .tool-techstack-list-row {
       display: grid;

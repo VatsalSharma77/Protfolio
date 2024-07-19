@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: [' Frontend Developer. ', '  MERN Stack Developer. ' ],
+      strings: [' Frontend Developer. ', '  MERN Stack Developer. '],
       typeSpeed: 80,
     });
 
@@ -18,6 +18,19 @@ const Header = () => {
       typed.destroy();
     };
   }, []);
+
+  const handleResumeClick = (e) => {
+    e.preventDefault();
+
+    window.open(resume, '_blank');
+
+    const link = document.createElement('a');
+    link.href = resume;
+    link.download = 'VatsalSharma-FullStackWebDeveloper-Resume.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <div id="home" className="header">
       <img src={profile_img} alt="" />
@@ -27,10 +40,13 @@ const Header = () => {
         and I am a  <span ref={el} />
 
       </h1>
-      <p>I am a proficient Full-Stack Developer with extensive experience in the MERN (MongoDB, Express.js, React, Node.js) stack, specializing in both frontend and backend development. </p>
       <div className="head-action">
         <div className="head-connect"><AnchorLink className="anchor-link" offset={50} href="#contact" >Connect With Me </AnchorLink></div>
-        <div className="head-resume"><a href={resume} download="VatsalSharma-FullStackWebDeveloper-Resume">My Resume</a></div>
+        <div className="head-resume">
+          <a href={resume} onClick={handleResumeClick}>
+            My Resume
+            </a>
+        </div>
       </div>
     </div>
   );

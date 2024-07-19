@@ -9,6 +9,7 @@
 
 .about-title {
   position: relative;
+  margin-top: 80px;
 }
 
 .about-title h1 {
@@ -175,3 +176,5 @@
     margin-top: 10px;
   }
 }
+
+

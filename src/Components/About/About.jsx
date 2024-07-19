@@ -17,8 +17,8 @@ const About = () => {
         </div>
         <div className="about-right">
           <div className="about-para">
-            <p>I am a skilled MERN stack web developer with strong expertise in both frontend and backend development. My proficiency in MongoDB, Express.js, React, and Node.js enables me to create robust and scalable web applications that deliver seamless user experiences. I excel in designing intuitive interfaces with React and implementing efficient server-side logic with Node.js and Express.js. </p>
-            <p>My ability to manage and optimize databases using MongoDB ensures data integrity and performance. Committed to continuous learning and innovation, I thrive in collaborative team environments and am passionate about leveraging my technical skills to drive project success.</p>
+            <p>A skilled MERN stack web developer with strong expertise in both frontend and backend development. Proficient in MongoDB, Express.js, React, and Node.js, with the ability to create robust and scalable web applications that deliver seamless user experiences. Excelling in designing intuitive interfaces with React and implementing efficient server-side logic with Node.js and Express.js. </p>
+            <p>Managing and optimizing databases using MongoDB ensures data integrity and performance. Committed to continuous learning and innovation, thriving in collaborative team environments, and passionate about leveraging technical skills to drive project success.</p>
           </div>
           <div className="tab-titles-education">
             <ul>
