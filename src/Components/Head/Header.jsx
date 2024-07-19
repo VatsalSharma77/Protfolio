@@ -4,7 +4,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import { useRef } from "react";
 import { useEffect } from "react";
 import Typed from "typed.js";
-import resume from "../../assets/VatsalSharma-FullStackWebDeveloper-Resume.pdf"
+import resume from "../../assets/Vatsal-Sharma-Resume.pdf"
 const Header = () => {
   const el = useRef(null);
 
@@ -26,7 +26,7 @@ const Header = () => {
 
     const link = document.createElement('a');
     link.href = resume;
-    link.download = 'VatsalSharma-FullStackWebDeveloper-Resume.pdf';
+    link.download = 'Vatsal-Sharma-Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
